@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resources - Pure Wellness | Wellness Guides & Tools</title>
+    <meta name="description" content="Access our comprehensive library of wellness resources including guides, recipes, tools, and educational materials to support your health journey.">
+    <meta name="keywords" content="wellness resources, health guides, nutrition recipes, wellness tools, health education">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌿</text></svg>">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="navbar-container">
+            <a href="index.html" class="navbar-brand">
+                🌿 Pure Wellness
+            </a>
+            <ul class="navbar-menu" id="navbar-menu">
+                <li><a href="index.html" class="navbar-link">Home</a></li>
+                <li><a href="about.html" class="navbar-link">About</a></li>
+                <li><a href="services.html" class="navbar-link">Services</a></li>
+                <li><a href="quiz.html" class="navbar-link">Assessment</a></li>
+                <li><a href="resources.html" class="navbar-link">Resources</a></li>
+                <li><a href="practices.html" class="navbar-link">Practices</a></li>
+                <li><a href="blog.html" class="navbar-link">Blog</a></li>
+                <li><a href="contact.html" class="navbar-link">Contact</a></li>
+            </ul>
+            <div class="navbar-toggle" id="navbar-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Hero -->
+    <section class="hero" style="min-height: 50vh;">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Wellness Resources</h1>
+                <p class="hero-subtitle">Your Comprehensive Wellness Library</p>
+                <p class="hero-description">
+                    Access our extensive collection of wellness guides, recipes, tools, and educational 
+                    materials designed to support every aspect of your health journey.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Search and Filter Section -->
+    <section class="section">
+        <div class="container">
+            <div class="text-center" style="margin-bottom: var(--spacing-xl);">
+                <h2>Find What You Need</h2>
+                <p style="font-size: 1.125rem; max-width: 600px; margin: 0 auto var(--spacing-lg);">
+                    Search our resources or browse by category to find the perfect tools and information for your wellness goals.
+                </p>
+                
+                <!-- Search Bar -->
+                <div style="max-width: 500px; margin: 0 auto var(--spacing-lg);">
+                    <div class="flex" style="gap: var(--spacing-sm);">
+                        <input type="text" id="search-input" placeholder="Search resources..." class="form-input" style="flex: 1;">
+                        <button id="search-btn" class="btn btn-primary">Search</button>
+                    </div>
+                    <div id="search-results" style="margin-top: var(--spacing-md);"></div>
+                </div>
+
+                <!-- Category Filters -->
+                <div class="flex-center flex-wrap" style="gap: var(--spacing-sm);">
+                    <button class="category-filter btn btn-secondary btn-small active" data-category="all">All</button>
+                    <button class="category-filter btn btn-secondary btn-small" data-category="nutrition">Nutrition</button>
+                    <button class="category-filter btn btn-secondary btn-small" data-category="fitness">Fitness</button>
+                    <button class="category-filter btn btn-secondary btn-small" data-category="mental">Mental Health</button>
+                    <button class="category-filter btn btn-secondary btn-small" data-category="lifestyle">Lifestyle</button>
+                    <button class="category-filter btn btn-secondary btn-small" data-category="recipes">Recipes</button>
+                    <button class="category-filter btn btn-secondary btn-small" data-category="tools">Tools</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Resources -->
+    <section class="section section-alt">
+        <div class="container">
+            <div class="text-center" style="margin-bottom: var(--spacing-3xl);">
+                <h2>Featured Resources</h2>
+                <p style="font-size: 1.125rem; max-width: 600px; margin: 0 auto;">
+                    Start with these popular resources that our community finds most helpful.
+                </p>
+            </div>
+            
+            <div class="grid grid-3">
+                <div class="card">
+                    <div class="card-icon card-icon-primary">📖</div>
+                    <h3>Complete Wellness Guide</h3>
+                    <p>A comprehensive 50-page guide covering all aspects of holistic wellness, from nutrition to mental health.</p>
+                    <div style="margin: var(--spacing-lg) 0;">
+                        <span style="background: var(--bg-tertiary); padding: var(--spacing-xs) var(--spacing-sm); border-radius: var(--radius-sm); font-size: 0.875rem; margin-right: var(--spacing-sm);">PDF</span>
+                        <span style="background: var(--bg-tertiary); padding: var(--spacing-xs) var(--spacing-sm); border-radius: var(--radius-sm); font-size: 0.875rem;">50 pages</span>
+                    </div>
+                    <a href="#" class="btn btn-primary btn-small">Download Guide</a>
+                </div>
+                
+                <div class="card">
+                    <div class="card-icon card-icon-secondary">🍎</div>
+                    <h3>Healthy Meal Planning Toolkit</h3>
+                    <p>Everything you need to plan nutritious meals including templates, shopping lists, and prep guides.</p>
+                    <div style="margin: var(--spacing-lg) 0;">
+                        <span style="background: var(--bg-tertiary); padding: var(--spacing-xs) var(--spacing-sm); border-radius: var(--radius-sm); font-size: 0.875rem; margin-right: var(--spacing-sm);">Toolkit</span>
+                        <span style="background: var(--bg-tertiary); padding: var(--spacing-xs) var(--spacing-sm); border-radius: var(--radius-sm); font-size: 0.875rem;">Interactive</span>
+                    </div>
+                    <a href="#" class="btn btn-secondary btn-small">Access Toolkit</a>
+                </div>
+                
+                <div class="card">
+                    <div class="card-icon card-icon-accent">🧘</div>
+                    <h3>Meditation Starter Pack</h3>
+                    <p>Begin your meditation journey with guided sessions, breathing exercises, and mindfulness techniques.</p>
+                    <div style="margin: var(--spacing-lg) 0;">
+                        <span style="background: var(--bg-tertiary); padding: var(--spacing-xs) var(--spacing-sm); border-radius: var(--radius-sm); font-size: 0.875rem; margin-right: var(--spacing-sm);">Audio</span>
+                        <span style="background: var(--bg-tertiary); padding: var(--spacing-xs) var(--spacing-sm); border-radius: var(--radius-sm); font-size: 0.875rem;">10 sessions</span>
+                    </div>
+                    <a href="#" class="btn btn-accent btn-small">Start Meditating</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resource Categories -->
+    <section class="section">
+        <div class="container">
+            <div class="text-center" style="margin-bottom: var(--spacing-3xl);">
+                <h2>Browse by Category</h2>
+                <p style="font-size: 1.125rem; max-width: 600px; margin: 0 auto;">
+                    Explore our organized collection of resources tailored to different aspects of wellness.
+                </p>
+            </div>
+
+            <!-- Nutrition Resources -->
+            <div class="resource-category" data-category="nutrition">
+                <h3 style="margin-bottom: var(--spacing-xl); color: var(--secondary-color);">🥗 Nutrition Resources</h3>
+                <div class="grid grid-2">
+                    <div class="card">
+                        <h4>Macro & Micronutrient Guide</h4>
+                        <p>Learn about essential nutrients, their sources, and how to balance them in your diet.</p>
+                        <div style="margin: var(--spacing-md) 0;">
+                            <span style="background: var(--bg-tertiary); padding: var(--spacing-xs) var(--spacing-sm); border-radius: var(--radius-sm); font-size: 0.875rem;">Guide</span>
+                        </div>
+                        <a href="#" class="btn btn-secondary btn-small">Read Guide</a>
+                    </div>
+                    
+                    <div class="card">
+                        <h4>Hydration Calculator</h4>
+                        <p>Calculate your daily water needs based on your activity level, climate, and health status.</p>
+                        <div style="margin: var(--spacing-md) 0;">
+                            <span style="background: var(--bg-tertiary); padding: var(--spacing-xs) var(--spacing-sm); border-radius: var(--radius-sm); font-size: 0.875rem;">Calculator</span>
+                        </div>
+                        <a href="#" class="btn btn-secondary btn-small">Use Calculator</a>
+                    </div>
+                    
+                    <div class="card">
+                        <h4>Supplement Guide</h4>
+                        <p>Evidence-based information about vitamins, minerals, and supplements for optimal health.</p>
+                        <div style="margin: var(--spacing-md) 0;">
+                            <span style="background: var(--bg-tertiary); padding: var(--spacing-xs) var(--spacing-sm); border-radius: var(--radius-sm); font-size: 0.875rem;">Guide</span>
+                        </div>
+                        <a href="#" class="btn btn-secondary btn-small">Read Guide</a>
+                    </div>
+                    
+                    <div class="card">
+                        <h4>Meal Prep Templates</h4>
+                        <p>Printable templates and guides for efficient meal planning and preparation.</p>
+                        <div style="margin: var(--spacing-md) 0;">
+                            <span style="background: var(--bg-tertiary); padding: var(--spacing-xs) var(--spacing-sm); border-radius: var(--radius-sm); font-size: 0.875rem;">Templates</span>
+                        </div>
+                        <a href="#" class="btn btn-secondary btn-small">Download</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Fitness Resources -->
+            <div class="resource-category" data-category="fitness" style="margin-top: var(--spacing-3xl);">
+                <h3 style="margin-bottom: var(--spacing-xl); color: var(--accent-color);">💪 Fitness Resources</h3>
+                <div class="grid grid-2">
+                    <div class="card">
+                        <h4>Home Workout Library</h4>
+                        <p>Collection of bodyweight exercises, yoga flows, and equipment-free workouts.</p>
+                        <div style="margin: var(--spacing-md) 0;">
+                            <span style="background: var(--bg-tertiary); padding: var(--spacing-xs) var(--spacing-sm); border-radius: var(--radius-sm); font-size: 0.875rem;">Video</span>
+                        </div>
+                        <a href="#" class="btn btn-accent btn-small">View Library</a>
+                    </div>
+                    
+                    <div class="card">
+                        <h4>Fitness Tracker</h4>
+                        <p>Track your workouts, set goals, and monitor your progress with our digital fitness tracker.</p>
+                        <div style="margin: var(--spacing-md) 0;">
+                            <span style="background: var(--bg-tertiary); padding: var(--spacing-xs) var(--spacing-sm); border-radius: var(--radius-sm); font-size: 0.875rem;">Tracker</span>
+                        </div>
+                        <a href="#" class="btn btn-accent btn-small">Start Tracking</a>
+                    </div>
+                    
+                    <div class="card">
+                        <h4>Injury Prevention Guide</h4>
+                        <p>Learn proper form, warm-up techniques, and recovery strategies to prevent injuries.</p>
+                        <div style="margin: var(--spacing-md) 0;">
+                            <span style="background: var(--bg-tertiary); padding: var(--spacing-xs) var(--spacing-sm); border-radius: var(--radius-sm); font-size: 0.875rem;">Guide</span>
+                        </div>
+                        <a href="#" class="btn btn-accent btn-small">Read Guide</a>
+                    </div>
+                    
+                    <div class="card">
+                        <h4>Flexibility & Mobility</h4>
+                        <p>Stretching routines and mobility exercises to improve flexibility and prevent stiffness.</p>
+                        <div style="margin: var(--spacing-md) 0;">
+                            <span style="background: var(--bg-tertiary); padding: var(--spacing-xs) var(--spacing-sm); border-radius: var(--radius-sm); font-size: 0.875rem;">Routines</span>
+                        </div>
+                        <a href="#" class="btn btn-accent btn-small">View Routines</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mental Health Resources -->
+            <div class="resource-category" data-category="mental" style="margin-top: var(--spacing-3xl);">
+                <h3 style="margin-bottom: var(--spacing-xl); color: var(--primary-color);">🧠 Mental Health Resources</h3>
+                <div class="grid grid-2">
+                    <div class="card">
+                        <h4>Stress Management Toolkit</h4>
+                        <p>Comprehensive strategies and techniques for managing stress and building resilience.</p>
+                        <div style="margin: var(--spacing-md) 0;">
+                            <span style="background: var(--bg-tertiary); padding: var(--spacing-xs) var(--spacing-sm); border-radius: var(--radius-sm); font-size: 0.875rem;">Toolkit</span>
+                        </div>
+                        <a href="#" class="btn btn-primary btn-small">Access Toolkit</a>
+                    </div>
+                    
+                    <div class="card">
+                        <h4>Mindfulness Journal</h4>
+                        <p>Daily reflection prompts and mindfulness exercises to cultivate awareness and gratitude.</p>
+                        <div style="margin: var(--spacing-md) 0;">
+                            <span style="background: var(--bg-tertiary); padding: var(--spacing-xs) var(--spacing-sm); border-radius: var(--radius-sm); font-size: 0.875rem;">Journal</span>
+                        </div>
+                        <a href="#" class="btn btn-primary btn-small">Start Journaling</a>
+                    </div>
+                    
+                    <div class="card">
+                        <h4>Sleep Optimization Guide</h4>
+                        <p>Evidence-based strategies for improving sleep quality and establishing healthy sleep habits.</p>
+                        <div style="margin: var(--spacing-md) 0;">
+                            <span style="background: var(--bg-tertiary); padding: var(--spacing-xs) var(--spacing-sm); border-radius: var(--radius-sm); font-size: 0.875rem;">Guide</span>
+                        </div>
+                        <a href="#" class="btn btn-primary btn-small">Read Guide</a>
+                    </div>
+                    
+                    <div class="card">
+                        <h4>Emotional Intelligence Workbook</h4>
+                        <p>Exercises and activities to develop emotional awareness, regulation, and interpersonal skills.</p>
+                        <div style="margin: var(--spacing-md) 0;">
+                            <span style="background: var(--bg-tertiary); padding: var(--spacing-xs) var(--spacing-sm); border-radius: var(--radius-sm); font-size: 0.875rem;">Workbook</span>
+                        </div>
+                        <a href="#" class="btn btn-primary btn-small">Start Workbook</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Recipe Collection -->
+            <div class="resource-category" data-category="recipes" style="margin-top: var(--spacing-3xl);">
+                <h3 style="margin-bottom: var(--spacing-xl); color: var(--secondary-color);">🍽️ Recipe Collection</h3>
+                <div class="grid grid-3">
+                    <div class="card">
+                        <h4>Quick & Healthy Breakfasts</h4>
+                        <p>Nutritious breakfast recipes that can be prepared in 15 minutes or less.</p>
+                        <div style="margin: var(--spacing-md) 0;">
+                            <span style="background: var(--bg-tertiary); padding: var(--spacing-xs) var(--spacing-sm); border-radius: var(--radius-sm); font-size: 0.875rem;">15 recipes</span>
+                        </div>
+                        <a href="#" class="btn btn-secondary btn-small">View Recipes</a>
+                    </div>
+                    
+                    <div class="card">
+                        <h4>Plant-Based Meals</h4>
+                        <p>Delicious vegetarian and vegan recipes packed with nutrients and flavor.</p>
+                        <div style="margin: var(--spacing-md) 0;">
+                            <span style="background: var(--bg-tertiary); padding: var(--spacing-xs) var(--spacing-sm); border-radius: var(--radius-sm); font-size: 0.875rem;">20 recipes</span>
+                        </div>
+                        <a href="#" class="btn btn-secondary btn-small">View Recipes</a>
+                    </div>
+                    
+                    <div class="card">
+                        <h4>Healthy Snacks & Treats</h4>
+                        <p>Satisfying snacks and guilt-free desserts that support your wellness goals.</p>
+                        <div style="margin: var(--spacing-md) 0;">
+                            <span style="background: var(--bg-tertiary); padding: var(--spacing-xs) var(--spacing-sm); border-radius: var(--radius-sm); font-size: 0.875rem;">12 recipes</span>
+                        </div>
+                        <a href="#" class="btn btn-secondary btn-small">View Recipes</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Wellness Tools -->
+            <div class="resource-category" data-category="tools" style="margin-top: var(--spacing-3xl);">
+                <h3 style="margin-bottom: var(--spacing-xl); color: var(--accent-color);">🛠️ Wellness Tools</h3>
+                <div class="grid grid-2">
+                    <div class="card">
+                        <h4>Habit Tracker</h4>
+                        <p>Track your daily wellness habits and build consistency with our digital habit tracker.</p>
+                        <div style="margin: var(--spacing-md) 0;">
+                            <span style="background: var(--bg-tertiary); padding: var(--spacing-xs) var(--spacing-sm); border-radius: var(--radius-sm); font-size: 0.875rem;">Tracker</span>
+                        </div>
+                        <a href="#" class="btn btn-accent btn-small">Start Tracking</a>
+                    </div>
+                    
+                    <div class="card">
+                        <h4>Wellness Calendar</h4>
+                        <p>Plan your wellness activities, track appointments, and schedule self-care time.</p>
+                        <div style="margin: var(--spacing-md) 0;">
+                            <span style="background: var(--bg-tertiary); padding: var(--spacing-xs) var(--spacing-sm); border-radius: var(--radius-sm); font-size: 0.875rem;">Calendar</span>
+                        </div>
+                        <a href="#" class="btn btn-accent btn-small">Open Calendar</a>
+                    </div>
+                    
+                    <div class="card">
+                        <h4>Goal Setting Worksheet</h4>
+                        <p>Structured worksheets to help you set, plan, and achieve your wellness goals.</p>
+                        <div style="margin: var(--spacing-md) 0;">
+                            <span style="background: var(--bg-tertiary); padding: var(--spacing-xs) var(--spacing-sm); border-radius: var(--radius-sm); font-size: 0.875rem;">Worksheet</span>
+                        </div>
+                        <a href="#" class="btn btn-accent btn-small">Download</a>
+                    </div>
+                    
+                    <div class="card">
+                        <h4>Progress Dashboard</h4>
+                        <p>Visualize your wellness progress with charts, graphs, and milestone tracking.</p>
+                        <div style="margin: var(--spacing-md) 0;">
+                            <span style="background: var(--bg-tertiary); padding: var(--spacing-xs) var(--spacing-sm); border-radius: var(--radius-sm); font-size: 0.875rem;">Dashboard</span>
+                        </div>
+                        <a href="#" class="btn btn-accent btn-small">View Dashboard</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Signup -->
+    <section class="section section-alt">
+        <div class="container">
+            <div class="text-center">
+                <h2>Stay Updated with New Resources</h2>
+                <p style="font-size: 1.125rem; max-width: 600px; margin: 0 auto var(--spacing-xl);">
+                    Subscribe to our newsletter to receive new resources, wellness tips, and exclusive content 
+                    delivered directly to your inbox.
+                </p>
+                <form id="newsletter-form" class="flex-center" style="gap: var(--spacing-md); max-width: 400px; margin: 0 auto;">
+                    <input type="email" placeholder="Enter your email" class="form-input" required>
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="section-alt" style="padding-top: var(--spacing-2xl); padding-bottom: var(--spacing-xl);">
+        <div class="container">
+            <div class="grid grid-4" style="margin-bottom: var(--spacing-2xl);">
+                <div>
+                    <h4 style="margin-bottom: var(--spacing-md);">🌿 Pure Wellness</h4>
+                    <p style="margin-bottom: var(--spacing-md);">
+                        Your trusted partner in holistic health and wellness. We're committed to helping you achieve 
+                        optimal well-being through personalized programs and expert guidance.
+                    </p>
+                    <div class="flex" style="gap: var(--spacing-md);">
+                        <a href="#" style="font-size: 1.5rem;">📘</a>
+                        <a href="#" style="font-size: 1.5rem;">📷</a>
+                        <a href="#" style="font-size: 1.5rem;">🐦</a>
+                        <a href="#" style="font-size: 1.5rem;">💼</a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h5 style="margin-bottom: var(--spacing-md);">Services</h5>
+                    <ul style="list-style: none;">
+                        <li style="margin-bottom: var(--spacing-sm);"><a href="services.html">Wellness Coaching</a></li>
+                        <li style="margin-bottom: var(--spacing-sm);"><a href="services.html">Nutrition Counseling</a></li>
+                        <li style="margin-bottom: var(--spacing-sm);"><a href="services.html">Fitness Training</a></li>
+                        <li style="margin-bottom: var(--spacing-sm);"><a href="services.html">Mental Health Support</a></li>
+                        <li style="margin-bottom: var(--spacing-sm);"><a href="services.html">Group Sessions</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h5 style="margin-bottom: var(--spacing-md);">Resources</h5>
+                    <ul style="list-style: none;">
+                        <li style="margin-bottom: var(--spacing-sm);"><a href="resources.html">Wellness Guides</a></li>
+                        <li style="margin-bottom: var(--spacing-sm);"><a href="blog.html">Health Articles</a></li>
+                        <li style="margin-bottom: var(--spacing-sm);"><a href="practices.html">Daily Practices</a></li>
+                        <li style="margin-bottom: var(--spacing-sm);"><a href="quiz.html">Wellness Assessment</a></li>
+                        <li style="margin-bottom: var(--spacing-sm);"><a href="resources.html">Recipe Collection</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h5 style="margin-bottom: var(--spacing-md);">Contact</h5>
+                    <p style="margin-bottom: var(--spacing-sm);">📧 info@purewellness.com</p>
+                    <p style="margin-bottom: var(--spacing-sm);">📞 (555) 123-4567</p>
+                    <p style="margin-bottom: var(--spacing-sm);">📍 123 Wellness Ave, Health City, HC 12345</p>
+                    <a href="contact.html" class="btn btn-primary btn-small">Contact Us</a>
+                </div>
+            </div>
+            
+            <div class="flex-between" style="padding-top: var(--spacing-xl); border-top: 1px solid var(--bg-tertiary);">
+                <p style="margin-bottom: 0; color: var(--text-light);">
+                    © 2024 Pure Wellness. All rights reserved.
+                </p>
+                <div class="flex" style="gap: var(--spacing-lg);">
+                    <a href="#" style="color: var(--text-light);">Privacy Policy</a>
+                    <a href="#" style="color: var(--text-light);">Terms of Service</a>
+                    <a href="#" style="color: var(--text-light);">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toast Container -->
+    <div id="toast-container"></div>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>

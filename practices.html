@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Practices - Pure Wellness | Meditation, Exercise & Wellness Routines</title>
+    <meta name="description" content="Discover guided daily practices including meditation, breathing exercises, yoga flows, and wellness routines to support your health journey.">
+    <meta name="keywords" content="daily practices, meditation, breathing exercises, yoga, wellness routines, mindfulness">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌿</text></svg>">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="navbar-container">
+            <a href="index.html" class="navbar-brand">
+                🌿 Pure Wellness
+            </a>
+            <ul class="navbar-menu" id="navbar-menu">
+                <li><a href="index.html" class="navbar-link">Home</a></li>
+                <li><a href="about.html" class="navbar-link">About</a></li>
+                <li><a href="services.html" class="navbar-link">Services</a></li>
+                <li><a href="quiz.html" class="navbar-link">Assessment</a></li>
+                <li><a href="resources.html" class="navbar-link">Resources</a></li>
+                <li><a href="practices.html" class="navbar-link">Practices</a></li>
+                <li><a href="blog.html" class="navbar-link">Blog</a></li>
+                <li><a href="contact.html" class="navbar-link">Contact</a></li>
+            </ul>
+            <div class="navbar-toggle" id="navbar-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Hero -->
+    <section class="hero" style="min-height: 50vh;">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Daily Practices</h1>
+                <p class="hero-subtitle">Transform Your Wellness Journey</p>
+                <p class="hero-description">
+                    Discover guided practices, meditation sessions, breathing exercises, and wellness routines 
+                    designed to help you build healthy habits and achieve your wellness goals.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Practice Categories -->
+    <section class="section">
+        <div class="container">
+            <div class="text-center" style="margin-bottom: var(--spacing-3xl);">
+                <h2>Choose Your Practice</h2>
+                <p style="font-size: 1.125rem; max-width: 600px; margin: 0 auto;">
+                    Select from our curated collection of wellness practices designed to support different 
+                    aspects of your health and well-being.
+                </p>
+            </div>
+            
+            <div class="grid grid-3">
+                <div class="card text-center">
+                    <div class="card-icon card-icon-primary">🧘</div>
+                    <h3>Meditation & Mindfulness</h3>
+                    <p>Guided meditation sessions, mindfulness exercises, and stress reduction techniques.</p>
+                    <a href="#meditation-section" class="btn btn-primary btn-small">Start Meditating</a>
+                </div>
+                
+                <div class="card text-center">
+                    <div class="card-icon card-icon-secondary">🌬️</div>
+                    <h3>Breathing Exercises</h3>
+                    <p>Breathing techniques for relaxation, energy, and emotional regulation.</p>
+                    <a href="#breathing-section" class="btn btn-secondary btn-small">Begin Breathing</a>
+                </div>
+                
+                <div class="card text-center">
+                    <div class="card-icon card-icon-accent">🧘‍♀️</div>
+                    <h3>Yoga & Movement</h3>
+                    <p>Gentle yoga flows, stretching routines, and mindful movement practices.</p>
+                    <a href="#yoga-section" class="btn btn-accent btn-small">Start Moving</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Meditation Section -->
+    <section id="meditation-section" class="section section-alt">
+        <div class="container">
+            <div class="text-center" style="margin-bottom: var(--spacing-3xl);">
+                <h2>Meditation & Mindfulness</h2>
+                <p style="font-size: 1.125rem; max-width: 600px; margin: 0 auto;">
+                    Cultivate inner peace and mental clarity with our guided meditation sessions 
+                    and mindfulness practices.
+                </p>
+            </div>
+            
+            <div class="grid grid-2">
+                <div class="card">
+                    <h3>Quick Meditation Timer</h3>
+                    <p style="margin-bottom: var(--spacing-lg);">
+                        Set a custom meditation timer with gentle bell sounds and guided prompts.
+                    </p>
+                    
+                    <!-- Meditation Timer -->
+                    <div id="meditation-timer" class="text-center" style="margin-bottom: var(--spacing-lg);">
+                        <div style="font-size: 3rem; font-weight: var(--font-weight-bold); color: var(--primary-color); margin-bottom: var(--spacing-md);" id="meditation-display">05:00</div>
+                        <div class="flex-center" style="gap: var(--spacing-sm); margin-bottom: var(--spacing-lg);">
+                            <button id="meditation-5min" class="btn btn-secondary btn-small">5 min</button>
+                            <button id="meditation-10min" class="btn btn-secondary btn-small">10 min</button>
+                            <button id="meditation-15min" class="btn btn-secondary btn-small">15 min</button>
+                            <button id="meditation-20min" class="btn btn-secondary btn-small">20 min</button>
+                        </div>
+                        <div class="flex-center" style="gap: var(--spacing-md);">
+                            <button id="meditation-start" class="btn btn-primary">Start</button>
+                            <button id="meditation-pause" class="btn btn-secondary" disabled>Pause</button>
+                            <button id="meditation-reset" class="btn btn-secondary">Reset</button>
+                        </div>
+                    </div>
+                    
+                    <div style="background: var(--bg-secondary); padding: var(--spacing-md); border-radius: var(--radius-md);">
+                        <h5 style="margin-bottom: var(--spacing-sm);">Meditation Tips:</h5>
+                        <ul style="margin-bottom: 0; font-size: 0.875rem;">
+                            <li>Find a quiet, comfortable space</li>
+                            <li>Sit with your back straight but relaxed</li>
+                            <li>Focus on your breath or a mantra</li>
+                            <li>Be patient with wandering thoughts</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <h3>Guided Meditation Sessions</h3>
+                    <p style="margin-bottom: var(--spacing-lg);">
+                        Choose from our collection of guided meditation sessions for different purposes.
+                    </p>
+                    
+                    <div style="margin-bottom: var(--spacing-lg);">
+                        <div class="card" style="padding: var(--spacing-md); margin-bottom: var(--spacing-md);">
+                            <div class="flex-between">
+                                <div>
+                                    <h5 style="margin-bottom: var(--spacing-sm);">Body Scan Meditation</h5>
+                                    <p style="font-size: 0.875rem; margin-bottom: 0;">Relax and release tension throughout your body</p>
+                                </div>
+                                <div class="flex-center" style="gap: var(--spacing-sm);">
+                                    <span style="font-size: 0.875rem; color: var(--text-light);">12 min</span>
+                                    <button class="btn btn-primary btn-small">Start</button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="card" style="padding: var(--spacing-md); margin-bottom: var(--spacing-md);">
+                            <div class="flex-between">
+                                <div>
+                                    <h5 style="margin-bottom: var(--spacing-sm);">Loving-Kindness Meditation</h5>
+                                    <p style="font-size: 0.875rem; margin-bottom: 0;">Cultivate compassion for yourself and others</p>
+                                </div>
+                                <div class="flex-center" style="gap: var(--spacing-sm);">
+                                    <span style="font-size: 0.875rem; color: var(--text-light);">15 min</span>
+                                    <button class="btn btn-primary btn-small">Start</button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="card" style="padding: var(--spacing-md); margin-bottom: var(--spacing-md);">
+                            <div class="flex-between">
+                                <div>
+                                    <h5 style="margin-bottom: var(--spacing-sm);">Mindfulness of Breath</h5>
+                                    <p style="font-size: 0.875rem; margin-bottom: 0;">Focus on the present moment through breath awareness</p>
+                                </div>
+                                <div class="flex-center" style="gap: var(--spacing-sm);">
+                                    <span style="font-size: 0.875rem; color: var(--text-light);">8 min</span>
+                                    <button class="btn btn-primary btn-small">Start</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Breathing Exercises Section -->
+    <section id="breathing-section" class="section">
+        <div class="container">
+            <div class="text-center" style="margin-bottom: var(--spacing-3xl);">
+                <h2>Breathing Exercises</h2>
+                <p style="font-size: 1.125rem; max-width: 600px; margin: 0 auto;">
+                    Harness the power of breath to reduce stress, increase energy, and improve focus 
+                    with our guided breathing exercises.
+                </p>
+            </div>
+            
+            <div class="grid grid-2">
+                <div class="card">
+                    <h3>4-7-8 Breathing</h3>
+                    <p style="margin-bottom: var(--spacing-lg);">
+                        A calming breathing technique that helps reduce anxiety and promote relaxation.
+                    </p>
+                    
+                    <!-- Breathing Exercise -->
+                    <div id="breathing-exercise" class="text-center" style="margin-bottom: var(--spacing-lg);">
+                        <div style="width: 200px; height: 200px; border-radius: 50%; background: var(--bg-gradient); margin: 0 auto var(--spacing-lg); display: flex; align-items: center; justify-content: center; color: var(--text-white); font-size: 1.5rem; font-weight: var(--font-weight-bold);" id="breathing-circle">
+                            Breathe In
+                        </div>
+                        <div style="margin-bottom: var(--spacing-lg);">
+                            <span id="breathing-phase">Inhale for 4</span>
+                        </div>
+                        <div class="flex-center" style="gap: var(--spacing-md);">
+                            <button id="breathing-start" class="btn btn-secondary">Start</button>
+                            <button id="breathing-stop" class="btn btn-secondary" disabled>Stop</button>
+                        </div>
+                    </div>
+                    
+                    <div style="background: var(--bg-secondary); padding: var(--spacing-md); border-radius: var(--radius-md);">
+                        <h5 style="margin-bottom: var(--spacing-sm);">Instructions:</h5>
+                        <ol style="margin-bottom: 0; font-size: 0.875rem;">
+                            <li>Inhale through your nose for 4 counts</li>
+                            <li>Hold your breath for 7 counts</li>
+                            <li>Exhale through your mouth for 8 counts</li>
+                            <li>Repeat the cycle</li>
+                        </ol>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <h3>Box Breathing</h3>
+                    <p style="margin-bottom: var(--spacing-lg);">
+                        A simple technique that helps improve focus and reduce stress by equalizing your breath.
+                    </p>
+                    
+                    <!-- Box Breathing Exercise -->
+                    <div id="box-breathing" class="text-center" style="margin-bottom: var(--spacing-lg);">
+                        <div style="width: 150px; height: 150px; border: 4px solid var(--primary-color); margin: 0 auto var(--spacing-lg); position: relative;" id="box-breathing-visual">
+                            <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: var(--primary-color); opacity: 0; transition: opacity 0.5s;" id="box-fill"></div>
+                            <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-weight: var(--font-weight-bold);" id="box-text">Inhale</div>
+                        </div>
+                        <div style="margin-bottom: var(--spacing-lg);">
+                            <span id="box-phase">Inhale for 4</span>
+                        </div>
+                        <div class="flex-center" style="gap: var(--spacing-md);">
+                            <button id="box-start" class="btn btn-secondary">Start</button>
+                            <button id="box-stop" class="btn btn-secondary" disabled>Stop</button>
+                        </div>
+                    </div>
+                    
+                    <div style="background: var(--bg-secondary); padding: var(--spacing-md); border-radius: var(--radius-md);">
+                        <h5 style="margin-bottom: var(--spacing-sm);">Box Breathing Steps:</h5>
+                        <ol style="margin-bottom: 0; font-size: 0.875rem;">
+                            <li>Inhale for 4 counts</li>
+                            <li>Hold for 4 counts</li>
+                            <li>Exhale for 4 counts</li>
+                            <li>Hold empty for 4 counts</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Yoga & Movement Section -->
+    <section id="yoga-section" class="section section-alt">
+        <div class="container">
+            <div class="text-center" style="margin-bottom: var(--spacing-3xl);">
+                <h2>Yoga & Movement</h2>
+                <p style="font-size: 1.125rem; max-width: 600px; margin: 0 auto;">
+                    Gentle yoga flows, stretching routines, and mindful movement practices to improve 
+                    flexibility, strength, and body awareness.
+                </p>
+            </div>
+            
+            <div class="grid grid-2">
+                <div class="card">
+                    <h3>Morning Yoga Flow</h3>
+                    <p style="margin-bottom: var(--spacing-lg);">
+                        Start your day with gentle movements and stretches to energize your body and mind.
+                    </p>
+                    
+                    <!-- Yoga Timer -->
+                    <div id="yoga-timer" class="text-center" style="margin-bottom: var(--spacing-lg);">
+                        <div style="font-size: 2.5rem; font-weight: var(--font-weight-bold); color: var(--accent-color); margin-bottom: var(--spacing-md);" id="yoga-display">00:00</div>
+                        <div style="margin-bottom: var(--spacing-lg);">
+                            <span id="yoga-pose">Mountain Pose</span>
+                        </div>
+                        <div class="flex-center" style="gap: var(--spacing-md);">
+                            <button id="yoga-start" class="btn btn-accent">Start Flow</button>
+                            <button id="yoga-pause" class="btn btn-secondary" disabled>Pause</button>
+                            <button id="yoga-reset" class="btn btn-secondary">Reset</button>
+                        </div>
+                    </div>
+                    
+                    <div style="background: var(--bg-secondary); padding: var(--spacing-md); border-radius: var(--radius-md);">
+                        <h5 style="margin-bottom: var(--spacing-sm);">Flow Sequence:</h5>
+                        <ul style="margin-bottom: 0; font-size: 0.875rem;">
+                            <li>Mountain Pose (30s)</li>
+                            <li>Forward Fold (30s)</li>
+                            <li>Downward Dog (45s)</li>
+                            <li>Child's Pose (30s)</li>
+                            <li>Cat-Cow (1min)</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <h3>Evening Stretch Routine</h3>
+                    <p style="margin-bottom: var(--spacing-lg);">
+                        Wind down with gentle stretches to release tension and prepare for restful sleep.
+                    </p>
+                    
+                    <!-- Stretch Timer -->
+                    <div id="stretch-timer" class="text-center" style="margin-bottom: var(--spacing-lg);">
+                        <div style="font-size: 2.5rem; font-weight: var(--font-weight-bold); color: var(--secondary-color); margin-bottom: var(--spacing-md);" id="stretch-display">00:00</div>
+                        <div style="margin-bottom: var(--spacing-lg);">
+                            <span id="stretch-pose">Neck Stretch</span>
+                        </div>
+                        <div class="flex-center" style="gap: var(--spacing-md);">
+                            <button id="stretch-start" class="btn btn-secondary">Start Routine</button>
+                            <button id="stretch-pause" class="btn btn-secondary" disabled>Pause</button>
+                            <button id="stretch-reset" class="btn btn-secondary">Reset</button>
+                        </div>
+                    </div>
+                    
+                    <div style="background: var(--bg-secondary); padding: var(--spacing-md); border-radius: var(--radius-md);">
+                        <h5 style="margin-bottom: var(--spacing-sm);">Stretch Sequence:</h5>
+                        <ul style="margin-bottom: 0; font-size: 0.875rem;">
+                            <li>Neck Stretch (30s)</li>
+                            <li>Shoulder Rolls (30s)</li>
+                            <li>Spinal Twist (45s each side)</li>
+                            <li>Hip Stretch (45s each side)</li>
+                            <li>Leg Stretch (1min each)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Progress Tracking -->
+    <section class="section">
+        <div class="container">
+            <div class="text-center" style="margin-bottom: var(--spacing-3xl);">
+                <h2>Track Your Progress</h2>
+                <p style="font-size: 1.125rem; max-width: 600px; margin: 0 auto;">
+                    Monitor your daily practice consistency and celebrate your wellness journey milestones.
+                </p>
+            </div>
+            
+            <div class="grid grid-3">
+                <div class="card text-center">
+                    <h3>Daily Streak</h3>
+                    <div style="font-size: 3rem; font-weight: var(--font-weight-bold); color: var(--primary-color); margin: var(--spacing-lg) 0;" id="streak-count">7</div>
+                    <p style="margin-bottom: var(--spacing-lg);">Days in a row</p>
+                    <div class="progress-bar" style="margin-bottom: var(--spacing-md);">
+                        <div class="progress-fill" style="width: 70%;"></div>
+                    </div>
+                    <p style="font-size: 0.875rem; color: var(--text-light);">Goal: 30 days</p>
+                </div>
+                
+                <div class="card text-center">
+                    <h3>This Week</h3>
+                    <div style="font-size: 3rem; font-weight: var(--font-weight-bold); color: var(--secondary-color); margin: var(--spacing-lg) 0;" id="weekly-count">5</div>
+                    <p style="margin-bottom: var(--spacing-lg);">Practice sessions</p>
+                    <div class="progress-bar" style="margin-bottom: var(--spacing-md);">
+                        <div class="progress-fill" style="width: 83%;"></div>
+                    </div>
+                    <p style="font-size: 0.875rem; color: var(--text-light);">Goal: 6 sessions</p>
+                </div>
+                
+                <div class="card text-center">
+                    <h3>Total Time</h3>
+                    <div style="font-size: 3rem; font-weight: var(--font-weight-bold); color: var(--accent-color); margin: var(--spacing-lg) 0;" id="total-time">2h 15m</div>
+                    <p style="margin-bottom: var(--spacing-lg);">This month</p>
+                    <div class="progress-bar" style="margin-bottom: var(--spacing-md);">
+                        <div class="progress-fill" style="width: 45%;"></div>
+                    </div>
+                    <p style="font-size: 0.875rem; color: var(--text-light);">Goal: 5 hours</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="section-alt" style="padding-top: var(--spacing-2xl); padding-bottom: var(--spacing-xl);">
+        <div class="container">
+            <div class="grid grid-4" style="margin-bottom: var(--spacing-2xl);">
+                <div>
+                    <h4 style="margin-bottom: var(--spacing-md);">🌿 Pure Wellness</h4>
+                    <p style="margin-bottom: var(--spacing-md);">
+                        Your trusted partner in holistic health and wellness. We're committed to helping you achieve 
+                        optimal well-being through personalized programs and expert guidance.
+                    </p>
+                    <div class="flex" style="gap: var(--spacing-md);">
+                        <a href="#" style="font-size: 1.5rem;">📘</a>
+                        <a href="#" style="font-size: 1.5rem;">📷</a>
+                        <a href="#" style="font-size: 1.5rem;">🐦</a>
+                        <a href="#" style="font-size: 1.5rem;">💼</a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h5 style="margin-bottom: var(--spacing-md);">Services</h5>
+                    <ul style="list-style: none;">
+                        <li style="margin-bottom: var(--spacing-sm);"><a href="services.html">Wellness Coaching</a></li>
+                        <li style="margin-bottom: var(--spacing-sm);"><a href="services.html">Nutrition Counseling</a></li>
+                        <li style="margin-bottom: var(--spacing-sm);"><a href="services.html">Fitness Training</a></li>
+                        <li style="margin-bottom: var(--spacing-sm);"><a href="services.html">Mental Health Support</a></li>
+                        <li style="margin-bottom: var(--spacing-sm);"><a href="services.html">Group Sessions</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h5 style="margin-bottom: var(--spacing-md);">Resources</h5>
+                    <ul style="list-style: none;">
+                        <li style="margin-bottom: var(--spacing-sm);"><a href="resources.html">Wellness Guides</a></li>
+                        <li style="margin-bottom: var(--spacing-sm);"><a href="blog.html">Health Articles</a></li>
+                        <li style="margin-bottom: var(--spacing-sm);"><a href="practices.html">Daily Practices</a></li>
+                        <li style="margin-bottom: var(--spacing-sm);"><a href="quiz.html">Wellness Assessment</a></li>
+                        <li style="margin-bottom: var(--spacing-sm);"><a href="resources.html">Recipe Collection</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h5 style="margin-bottom: var(--spacing-md);">Contact</h5>
+                    <p style="margin-bottom: var(--spacing-sm);">📧 info@purewellness.com</p>
+                    <p style="margin-bottom: var(--spacing-sm);">📞 (555) 123-4567</p>
+                    <p style="margin-bottom: var(--spacing-sm);">📍 123 Wellness Ave, Health City, HC 12345</p>
+                    <a href="contact.html" class="btn btn-primary btn-small">Contact Us</a>
+                </div>
+            </div>
+            
+            <div class="flex-between" style="padding-top: var(--spacing-xl); border-top: 1px solid var(--bg-tertiary);">
+                <p style="margin-bottom: 0; color: var(--text-light);">
+                    © 2024 Pure Wellness. All rights reserved.
+                </p>
+                <div class="flex" style="gap: var(--spacing-lg);">
+                    <a href="#" style="color: var(--text-light);">Privacy Policy</a>
+                    <a href="#" style="color: var(--text-light);">Terms of Service</a>
+                    <a href="#" style="color: var(--text-light);">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toast Container -->
+    <div id="toast-container"></div>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+    <script src="practices.js"></script>
+</body>
+</html>

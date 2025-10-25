@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wellness Assessment - Pure Wellness | Personalized Health Quiz</title>
+    <meta name="description" content="Take our comprehensive wellness assessment to receive personalized recommendations for your health journey. Discover your wellness profile and get customized guidance.">
+    <meta name="keywords" content="wellness assessment, health quiz, wellness evaluation, personalized health, wellness test">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌿</text></svg>">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="navbar-container">
+            <a href="index.html" class="navbar-brand">
+                🌿 Pure Wellness
+            </a>
+            <ul class="navbar-menu" id="navbar-menu">
+                <li><a href="index.html" class="navbar-link">Home</a></li>
+                <li><a href="about.html" class="navbar-link">About</a></li>
+                <li><a href="services.html" class="navbar-link">Services</a></li>
+                <li><a href="quiz.html" class="navbar-link">Assessment</a></li>
+                <li><a href="resources.html" class="navbar-link">Resources</a></li>
+                <li><a href="practices.html" class="navbar-link">Practices</a></li>
+                <li><a href="blog.html" class="navbar-link">Blog</a></li>
+                <li><a href="contact.html" class="navbar-link">Contact</a></li>
+            </ul>
+            <div class="navbar-toggle" id="navbar-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Hero -->
+    <section class="hero" style="min-height: 50vh;">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Wellness Assessment</h1>
+                <p class="hero-subtitle">Discover Your Wellness Profile</p>
+                <p class="hero-description">
+                    Take our comprehensive wellness assessment to receive personalized recommendations 
+                    tailored to your unique health goals and lifestyle. Get insights into your current 
+                    wellness status and actionable steps for improvement.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quiz Container -->
+    <section class="section">
+        <div class="container">
+            <div id="quiz-container" style="max-width: 800px; margin: 0 auto;">
+                
+                <!-- Quiz Introduction -->
+                <div id="quiz-intro" class="card text-center">
+                    <h2>Welcome to Your Wellness Assessment</h2>
+                    <p style="font-size: 1.125rem; margin-bottom: var(--spacing-lg);">
+                        This assessment will help us understand your current wellness status across different 
+                        dimensions of health. Your answers will be used to create personalized recommendations 
+                        for your wellness journey.
+                    </p>
+                    <div style="background: var(--bg-secondary); padding: var(--spacing-lg); border-radius: var(--radius-lg); margin-bottom: var(--spacing-xl);">
+                        <h4 style="margin-bottom: var(--spacing-md);">What to Expect:</h4>
+                        <ul style="text-align: left; max-width: 400px; margin: 0 auto;">
+                            <li>15-20 questions about your lifestyle and habits</li>
+                            <li>Takes approximately 5-10 minutes to complete</li>
+                            <li>Personalized wellness recommendations</li>
+                            <li>Actionable steps for improvement</li>
+                        </ul>
+                    </div>
+                    <button id="start-quiz" class="btn btn-primary btn-large">Start Assessment</button>
+                </div>
+
+                <!-- Quiz Questions -->
+                <div id="quiz-questions" style="display: none;">
+                    <!-- Progress Bar -->
+                    <div style="margin-bottom: var(--spacing-xl);">
+                        <div class="flex-between" style="margin-bottom: var(--spacing-sm);">
+                            <span>Progress</span>
+                            <span id="progress-text">Question 1 of 15</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div id="progress-fill" class="progress-fill" style="width: 6.67%;"></div>
+                        </div>
+                    </div>
+
+                    <!-- Question Container -->
+                    <div id="question-container" class="card">
+                        <h3 id="question-title">Question Title</h3>
+                        <p id="question-text">Question text goes here...</p>
+                        
+                        <div id="question-options" style="margin-top: var(--spacing-lg);">
+                            <!-- Options will be dynamically generated -->
+                        </div>
+                        
+                        <div class="flex-between" style="margin-top: var(--spacing-xl);">
+                            <button id="prev-question" class="btn btn-secondary" style="display: none;">Previous</button>
+                            <button id="next-question" class="btn btn-primary" disabled>Next</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Quiz Results -->
+                <div id="quiz-results" style="display: none;">
+                    <div class="card text-center">
+                        <h2>Your Wellness Assessment Results</h2>
+                        <p style="font-size: 1.125rem; margin-bottom: var(--spacing-xl);">
+                            Based on your responses, here's your personalized wellness profile and recommendations.
+                        </p>
+                        
+                        <!-- Overall Score -->
+                        <div style="background: var(--bg-gradient); color: var(--text-white); padding: var(--spacing-xl); border-radius: var(--radius-lg); margin-bottom: var(--spacing-xl);">
+                            <h3 style="color: var(--text-white); margin-bottom: var(--spacing-md);">Overall Wellness Score</h3>
+                            <div id="overall-score" style="font-size: 4rem; font-weight: var(--font-weight-bold); margin-bottom: var(--spacing-md);">85</div>
+                            <p style="color: rgba(255, 255, 255, 0.9); margin-bottom: 0;" id="score-description">
+                                You're doing well overall! There are some areas where you can make improvements.
+                            </p>
+                        </div>
+
+                        <!-- Category Scores -->
+                        <div id="category-scores" class="grid grid-2" style="margin-bottom: var(--spacing-xl);">
+                            <!-- Category scores will be dynamically generated -->
+                        </div>
+
+                        <!-- Recommendations -->
+                        <div id="recommendations" style="text-align: left;">
+                            <h3 style="text-align: center; margin-bottom: var(--spacing-xl);">Personalized Recommendations</h3>
+                            <div id="recommendations-list">
+                                <!-- Recommendations will be dynamically generated -->
+                            </div>
+                        </div>
+
+                        <!-- Action Buttons -->
+                        <div class="flex-center" style="gap: var(--spacing-md); margin-top: var(--spacing-xl);">
+                            <button id="retake-quiz" class="btn btn-secondary">Retake Assessment</button>
+                            <button id="save-results" class="btn btn-primary">Save Results</button>
+                            <button id="share-results" class="btn btn-accent">Share Results</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Additional Resources -->
+    <section class="section section-alt">
+        <div class="container">
+            <div class="text-center" style="margin-bottom: var(--spacing-3xl);">
+                <h2>Continue Your Wellness Journey</h2>
+                <p style="font-size: 1.125rem; max-width: 600px; margin: 0 auto;">
+                    Based on your assessment results, explore these resources and services to support 
+                    your wellness goals.
+                </p>
+            </div>
+            
+            <div class="grid grid-3">
+                <div class="card text-center">
+                    <div class="card-icon card-icon-primary">📚</div>
+                    <h3>Wellness Resources</h3>
+                    <p>Access our comprehensive library of wellness guides, articles, and tools to support your health journey.</p>
+                    <a href="resources.html" class="btn btn-primary btn-small">Explore Resources</a>
+                </div>
+                
+                <div class="card text-center">
+                    <div class="card-icon card-icon-secondary">🧘</div>
+                    <h3>Daily Practices</h3>
+                    <p>Discover guided practices, meditation sessions, and wellness exercises you can do at home.</p>
+                    <a href="practices.html" class="btn btn-secondary btn-small">Start Practicing</a>
+                </div>
+                
+                <div class="card text-center">
+                    <div class="card-icon card-icon-accent">👥</div>
+                    <h3>Professional Support</h3>
+                    <p>Connect with our wellness experts for personalized coaching and guidance tailored to your needs.</p>
+                    <a href="services.html" class="btn btn-accent btn-small">Get Support</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="section-alt" style="padding-top: var(--spacing-2xl); padding-bottom: var(--spacing-xl);">
+        <div class="container">
+            <div class="grid grid-4" style="margin-bottom: var(--spacing-2xl);">
+                <div>
+                    <h4 style="margin-bottom: var(--spacing-md);">🌿 Pure Wellness</h4>
+                    <p style="margin-bottom: var(--spacing-md);">
+                        Your trusted partner in holistic health and wellness. We're committed to helping you achieve 
+                        optimal well-being through personalized programs and expert guidance.
+                    </p>
+                    <div class="flex" style="gap: var(--spacing-md);">
+                        <a href="#" style="font-size: 1.5rem;">📘</a>
+                        <a href="#" style="font-size: 1.5rem;">📷</a>
+                        <a href="#" style="font-size: 1.5rem;">🐦</a>
+                        <a href="#" style="font-size: 1.5rem;">💼</a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h5 style="margin-bottom: var(--spacing-md);">Services</h5>
+                    <ul style="list-style: none;">
+                        <li style="margin-bottom: var(--spacing-sm);"><a href="services.html">Wellness Coaching</a></li>
+                        <li style="margin-bottom: var(--spacing-sm);"><a href="services.html">Nutrition Counseling</a></li>
+                        <li style="margin-bottom: var(--spacing-sm);"><a href="services.html">Fitness Training</a></li>
+                        <li style="margin-bottom: var(--spacing-sm);"><a href="services.html">Mental Health Support</a></li>
+                        <li style="margin-bottom: var(--spacing-sm);"><a href="services.html">Group Sessions</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h5 style="margin-bottom: var(--spacing-md);">Resources</h5>
+                    <ul style="list-style: none;">
+                        <li style="margin-bottom: var(--spacing-sm);"><a href="resources.html">Wellness Guides</a></li>
+                        <li style="margin-bottom: var(--spacing-sm);"><a href="blog.html">Health Articles</a></li>
+                        <li style="margin-bottom: var(--spacing-sm);"><a href="practices.html">Daily Practices</a></li>
+                        <li style="margin-bottom: var(--spacing-sm);"><a href="quiz.html">Wellness Assessment</a></li>
+                        <li style="margin-bottom: var(--spacing-sm);"><a href="resources.html">Recipe Collection</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h5 style="margin-bottom: var(--spacing-md);">Contact</h5>
+                    <p style="margin-bottom: var(--spacing-sm);">📧 info@purewellness.com</p>
+                    <p style="margin-bottom: var(--spacing-sm);">📞 (555) 123-4567</p>
+                    <p style="margin-bottom: var(--spacing-sm);">📍 123 Wellness Ave, Health City, HC 12345</p>
+                    <a href="contact.html" class="btn btn-primary btn-small">Contact Us</a>
+                </div>
+            </div>
+            
+            <div class="flex-between" style="padding-top: var(--spacing-xl); border-top: 1px solid var(--bg-tertiary);">
+                <p style="margin-bottom: 0; color: var(--text-light);">
+                    © 2024 Pure Wellness. All rights reserved.
+                </p>
+                <div class="flex" style="gap: var(--spacing-lg);">
+                    <a href="#" style="color: var(--text-light);">Privacy Policy</a>
+                    <a href="#" style="color: var(--text-light);">Terms of Service</a>
+                    <a href="#" style="color: var(--text-light);">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toast Container -->
+    <div id="toast-container"></div>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+    <script src="quiz.js"></script>
+</body>
+</html>

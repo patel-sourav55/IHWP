@@ -1,0 +1,22 @@
+{
+  "name": "pure-wellness",
+  "version": "1.0.0",
+  "description": "A comprehensive wellness platform with interactive features and modern design",
+  "main": "index.html",
+  "scripts": {
+    "start": "python -m http.server 8000",
+    "dev": "python -m http.server 8000"
+  },
+  "keywords": [
+    "wellness",
+    "health",
+    "fitness",
+    "meditation",
+    "nutrition",
+    "holistic"
+  ],
+  "author": "Pure Wellness Team",
+  "license": "MIT",
+  "devDependencies": {},
+  "dependencies": {}
+}

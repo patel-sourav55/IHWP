@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Pure Wellness | Get in Touch</title>
+    <meta name="description" content="Contact Pure Wellness for personalized wellness guidance, consultations, and support. We're here to help you on your health journey.">
+    <meta name="keywords" content="contact wellness, wellness consultation, health support, wellness coaching contact">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌿</text></svg>">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="navbar-container">
+            <a href="index.html" class="navbar-brand">
+                🌿 Pure Wellness
+            </a>
+            <ul class="navbar-menu" id="navbar-menu">
+                <li><a href="index.html" class="navbar-link">Home</a></li>
+                <li><a href="about.html" class="navbar-link">About</a></li>
+                <li><a href="services.html" class="navbar-link">Services</a></li>
+                <li><a href="quiz.html" class="navbar-link">Assessment</a></li>
+                <li><a href="resources.html" class="navbar-link">Resources</a></li>
+                <li><a href="practices.html" class="navbar-link">Practices</a></li>
+                <li><a href="blog.html" class="navbar-link">Blog</a></li>
+                <li><a href="contact.html" class="navbar-link">Contact</a></li>
+            </ul>
+            <div class="navbar-toggle" id="navbar-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Hero -->
+    <section class="hero" style="min-height: 50vh;">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Contact Us</h1>
+                <p class="hero-subtitle">We're Here to Support Your Wellness Journey</p>
+                <p class="hero-description">
+                    Ready to start your wellness journey or have questions about our services? 
+                    We'd love to hear from you and help you take the next step toward better health.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form and Information -->
+    <section class="section">
+        <div class="container">
+            <div class="grid grid-2" style="gap: var(--spacing-3xl);">
+                <!-- Contact Form -->
+                <div class="card">
+                    <h2>Send Us a Message</h2>
+                    <p style="margin-bottom: var(--spacing-xl);">
+                        Fill out the form below and we'll get back to you within 24 hours.
+                    </p>
+                    
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <label for="name" class="form-label">Full Name *</label>
+                            <input type="text" id="name" name="name" class="form-input" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email Address *</label>
+                            <input type="email" id="email" name="email" class="form-input" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone" class="form-label">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" class="form-input">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="service" class="form-label">Service Interest</label>
+                            <select id="service" name="service" class="form-select">
+                                <option value="">Select a service</option>
+                                <option value="wellness-coaching">Wellness Coaching</option>
+                                <option value="nutrition-counseling">Nutrition Counseling</option>
+                                <option value="fitness-training">Fitness Training</option>
+                                <option value="mental-health">Mental Health Support</option>
+                                <option value="group-sessions">Group Sessions</option>
+                                <option value="consultation">Free Consultation</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message" class="form-label">Message *</label>
+                            <textarea id="message" name="message" class="form-textarea" rows="5" required placeholder="Tell us about your wellness goals and how we can help..."></textarea>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="flex" style="align-items: center; cursor: pointer;">
+                                <input type="checkbox" id="newsletter" name="newsletter" style="margin-right: var(--spacing-sm);">
+                                <span>Subscribe to our newsletter for wellness tips and updates</span>
+                            </label>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-large" style="width: 100%;">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+                
+                <!-- Contact Information -->
+                <div>
+                    <h2>Get in Touch</h2>
+                    <p style="margin-bottom: var(--spacing-xl);">
+                        We're here to help you on your wellness journey. Reach out to us through 
+                        any of the methods below.
+                    </p>
+                    
+                    <div class="card" style="margin-bottom: var(--spacing-lg);">
+                        <div class="flex" style="margin-bottom: var(--spacing-md);">
+                            <div class="card-icon card-icon-primary" style="margin-right: var(--spacing-md); margin-bottom: 0;">📧</div>
+                            <div>
+                                <h4>Email Us</h4>
+                                <p style="margin-bottom: var(--spacing-sm);">info@purewellness.com</p>
+                                <p style="font-size: 0.875rem; color: var(--text-light);">We typically respond within 24 hours</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card" style="margin-bottom: var(--spacing-lg);">
+                        <div class="flex" style="margin-bottom: var(--spacing-md);">
+                            <div class="card-icon card-icon-secondary" style="margin-right: var(--spacing-md); margin-bottom: 0;">📞</div>
+                            <div>
+                                <h4>Call Us</h4>
+                                <p style="margin-bottom: var(--spacing-sm);">(555) 123-4567</p>
+                                <p style="font-size: 0.875rem; color: var(--text-light);">Mon-Fri: 9AM-6PM, Sat: 10AM-4PM</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card" style="margin-bottom: var(--spacing-lg);">
+                        <div class="flex" style="margin-bottom: var(--spacing-md);">
+                            <div class="card-icon card-icon-accent" style="margin-right: var(--spacing-md); margin-bottom: 0;">📍</div>
+                            <div>
+                                <h4>Visit Us</h4>
+                                <p style="margin-bottom: var(--spacing-sm);">123 Wellness Ave<br>Health City, HC 12345</p>
+                                <p style="font-size: 0.875rem; color: var(--text-light);">By appointment only</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <h4 style="margin-bottom: var(--spacing-md);">Follow Us</h4>
+                        <div class="flex" style="gap: var(--spacing-md);">
+                            <a href="#" style="font-size: 2rem;">📘</a>
+                            <a href="#" style="font-size: 2rem;">📷</a>
+                            <a href="#" style="font-size: 2rem;">🐦</a>
+                            <a href="#" style="font-size: 2rem;">💼</a>
+                        </div>
+                        <p style="font-size: 0.875rem; color: var(--text-light); margin-top: var(--spacing-md); margin-bottom: 0;">
+                            Stay connected for daily wellness inspiration and tips
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section section-alt">
+        <div class="container">
+            <div class="text-center" style="margin-bottom: var(--spacing-3xl);">
+                <h2>Frequently Asked Questions</h2>
+                <p style="font-size: 1.125rem; max-width: 600px; margin: 0 auto;">
+                    Find answers to common questions about our services and wellness programs.
+                </p>
+            </div>
+            
+            <div class="grid grid-2">
+                <div class="card">
+                    <h4>How do I get started with Pure Wellness?</h4>
+                    <p>We recommend starting with our free wellness assessment to understand your current health status and goals. From there, we can recommend the best services and programs for your needs.</p>
+                </div>
+                
+                <div class="card">
+                    <h4>Do you offer virtual consultations?</h4>
+                    <p>Yes! We offer both in-person and virtual consultations for all our services. Virtual sessions are conducted via secure video calls and are just as effective as in-person meetings.</p>
+                </div>
+                
+                <div class="card">
+                    <h4>What should I expect in my first session?</h4>
+                    <p>Your first session will include a comprehensive health assessment, goal setting, and development of a personalized wellness plan. We'll also answer any questions you have about our approach.</p>
+                </div>
+                
+                <div class="card">
+                    <h4>Do you accept insurance?</h4>
+                    <p>We work with most major insurance providers for our mental health services. For other services, we offer flexible payment plans and package deals to make wellness accessible.</p>
+                </div>
+                
+                <div class="card">
+                    <h4>How long does it take to see results?</h4>
+                    <p>Results vary depending on your goals and commitment level. Most clients notice improvements in energy and mood within 2-4 weeks, with more significant changes occurring over 3-6 months.</p>
+                </div>
+                
+                <div class="card">
+                    <h4>Can I change or cancel my program?</h4>
+                    <p>Absolutely! We understand that life changes and needs evolve. We offer flexible program modifications and have a 30-day cancellation policy for most services.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="section">
+        <div class="container">
+            <div class="text-center" style="margin-bottom: var(--spacing-3xl);">
+                <h2>Visit Our Wellness Center</h2>
+                <p style="font-size: 1.125rem; max-width: 600px; margin: 0 auto;">
+                    Located in the heart of Health City, our wellness center provides a peaceful 
+                    environment for your health and wellness journey.
+                </p>
+            </div>
+            
+            <div class="card" style="max-width: 800px; margin: 0 auto;">
+                <div style="background: var(--bg-gradient); height: 300px; border-radius: var(--radius-lg); display: flex; align-items: center; justify-content: center; color: var(--text-white); font-size: 4rem; margin-bottom: var(--spacing-lg);">
+                    🗺️
+                </div>
+                <div class="text-center">
+                    <h4>Pure Wellness Center</h4>
+                    <p style="margin-bottom: var(--spacing-md);">
+                        123 Wellness Ave, Health City, HC 12345
+                    </p>
+                    <p style="margin-bottom: var(--spacing-lg);">
+                        Our center features state-of-the-art facilities including meditation rooms, 
+                        fitness studios, consultation rooms, and a wellness library.
+                    </p>
+                    <div class="flex-center" style="gap: var(--spacing-md);">
+                        <a href="#" class="btn btn-primary">Get Directions</a>
+                        <a href="#" class="btn btn-secondary">Schedule Visit</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="section section-alt">
+        <div class="container">
+            <div class="text-center">
+                <h2>Ready to Start Your Wellness Journey?</h2>
+                <p style="font-size: 1.125rem; max-width: 600px; margin: 0 auto var(--spacing-2xl);">
+                    Take the first step toward better health and well-being. Schedule your 
+                    free consultation today and discover how we can support your wellness goals.
+                </p>
+                <div class="flex-center" style="gap: var(--spacing-md);">
+                    <a href="#contact-form" class="btn btn-primary btn-large">Schedule Consultation</a>
+                    <a href="quiz.html" class="btn btn-secondary btn-large">Take Assessment</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="section-alt" style="padding-top: var(--spacing-2xl); padding-bottom: var(--spacing-xl);">
+        <div class="container">
+            <div class="grid grid-4" style="margin-bottom: var(--spacing-2xl);">
+                <div>
+                    <h4 style="margin-bottom: var(--spacing-md);">🌿 Pure Wellness</h4>
+                    <p style="margin-bottom: var(--spacing-md);">
+                        Your trusted partner in holistic health and wellness. We're committed to helping you achieve 
+                        optimal well-being through personalized programs and expert guidance.
+                    </p>
+                    <div class="flex" style="gap: var(--spacing-md);">
+                        <a href="#" style="font-size: 1.5rem;">📘</a>
+                        <a href="#" style="font-size: 1.5rem;">📷</a>
+                        <a href="#" style="font-size: 1.5rem;">🐦</a>
+                        <a href="#" style="font-size: 1.5rem;">💼</a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h5 style="margin-bottom: var(--spacing-md);">Services</h5>
+                    <ul style="list-style: none;">
+                        <li style="margin-bottom: var(--spacing-sm);"><a href="services.html">Wellness Coaching</a></li>
+                        <li style="margin-bottom: var(--spacing-sm);"><a href="services.html">Nutrition Counseling</a></li>
+                        <li style="margin-bottom: var(--spacing-sm);"><a href="services.html">Fitness Training</a></li>
+                        <li style="margin-bottom: var(--spacing-sm);"><a href="services.html">Mental Health Support</a></li>
+                        <li style="margin-bottom: var(--spacing-sm);"><a href="services.html">Group Sessions</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h5 style="margin-bottom: var(--spacing-md);">Resources</h5>
+                    <ul style="list-style: none;">
+                        <li style="margin-bottom: var(--spacing-sm);"><a href="resources.html">Wellness Guides</a></li>
+                        <li style="margin-bottom: var(--spacing-sm);"><a href="blog.html">Health Articles</a></li>
+                        <li style="margin-bottom: var(--spacing-sm);"><a href="practices.html">Daily Practices</a></li>
+                        <li style="margin-bottom: var(--spacing-sm);"><a href="quiz.html">Wellness Assessment</a></li>
+                        <li style="margin-bottom: var(--spacing-sm);"><a href="resources.html">Recipe Collection</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h5 style="margin-bottom: var(--spacing-md);">Contact</h5>
+                    <p style="margin-bottom: var(--spacing-sm);">📧 info@purewellness.com</p>
+                    <p style="margin-bottom: var(--spacing-sm);">📞 (555) 123-4567</p>
+                    <p style="margin-bottom: var(--spacing-sm);">📍 123 Wellness Ave, Health City, HC 12345</p>
+                    <a href="contact.html" class="btn btn-primary btn-small">Contact Us</a>
+                </div>
+            </div>
+            
+            <div class="flex-between" style="padding-top: var(--spacing-xl); border-top: 1px solid var(--bg-tertiary);">
+                <p style="margin-bottom: 0; color: var(--text-light);">
+                    © 2024 Pure Wellness. All rights reserved.
+                </p>
+                <div class="flex" style="gap: var(--spacing-lg);">
+                    <a href="#" style="color: var(--text-light);">Privacy Policy</a>
+                    <a href="#" style="color: var(--text-light);">Terms of Service</a>
+                    <a href="#" style="color: var(--text-light);">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toast Container -->
+    <div id="toast-container"></div>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+    <script src="contact.js"></script>
+</body>
+</html>

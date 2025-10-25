@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Pure Wellness | Health & Wellness Articles</title>
+    <meta name="description" content="Read our latest articles on health, wellness, nutrition, fitness, and mental health. Expert insights and practical tips for your wellness journey.">
+    <meta name="keywords" content="wellness blog, health articles, nutrition tips, fitness advice, mental health, wellness insights">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌿</text></svg>">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="navbar-container">
+            <a href="index.html" class="navbar-brand">
+                🌿 Pure Wellness
+            </a>
+            <ul class="navbar-menu" id="navbar-menu">
+                <li><a href="index.html" class="navbar-link">Home</a></li>
+                <li><a href="about.html" class="navbar-link">About</a></li>
+                <li><a href="services.html" class="navbar-link">Services</a></li>
+                <li><a href="quiz.html" class="navbar-link">Assessment</a></li>
+                <li><a href="resources.html" class="navbar-link">Resources</a></li>
+                <li><a href="practices.html" class="navbar-link">Practices</a></li>
+                <li><a href="blog.html" class="navbar-link">Blog</a></li>
+                <li><a href="contact.html" class="navbar-link">Contact</a></li>
+            </ul>
+            <div class="navbar-toggle" id="navbar-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Hero -->
+    <section class="hero" style="min-height: 50vh;">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Wellness Blog</h1>
+                <p class="hero-subtitle">Insights & Inspiration for Your Health Journey</p>
+                <p class="hero-description">
+                    Discover expert insights, practical tips, and inspiring stories to support your 
+                    wellness journey. Stay informed with the latest research and evidence-based advice.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Search and Filter Section -->
+    <section class="section">
+        <div class="container">
+            <div class="text-center" style="margin-bottom: var(--spacing-xl);">
+                <h2>Explore Our Articles</h2>
+                <p style="font-size: 1.125rem; max-width: 600px; margin: 0 auto var(--spacing-lg);">
+                    Find articles that resonate with your wellness goals and interests.
+                </p>
+                
+                <!-- Search Bar -->
+                <div style="max-width: 500px; margin: 0 auto var(--spacing-lg);">
+                    <div class="flex" style="gap: var(--spacing-sm);">
+                        <input type="text" id="blog-search-input" placeholder="Search articles..." class="form-input" style="flex: 1;">
+                        <button id="blog-search-btn" class="btn btn-primary">Search</button>
+                    </div>
+                    <div id="blog-search-results" style="margin-top: var(--spacing-md);"></div>
+                </div>
+
+                <!-- Category Filters -->
+                <div class="flex-center flex-wrap" style="gap: var(--spacing-sm);">
+                    <button class="blog-category-filter btn btn-secondary btn-small active" data-category="all">All</button>
+                    <button class="blog-category-filter btn btn-secondary btn-small" data-category="nutrition">Nutrition</button>
+                    <button class="blog-category-filter btn btn-secondary btn-small" data-category="fitness">Fitness</button>
+                    <button class="blog-category-filter btn btn-secondary btn-small" data-category="mental-health">Mental Health</button>
+                    <button class="blog-category-filter btn btn-secondary btn-small" data-category="lifestyle">Lifestyle</button>
+                    <button class="blog-category-filter btn btn-secondary btn-small" data-category="wellness-tips">Wellness Tips</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Article -->
+    <section class="section section-alt">
+        <div class="container">
+            <div class="text-center" style="margin-bottom: var(--spacing-3xl);">
+                <h2>Featured Article</h2>
+            </div>
+            
+            <div class="card" style="max-width: 800px; margin: 0 auto;">
+                <div class="grid grid-2" style="align-items: center; gap: var(--spacing-xl);">
+                    <div>
+                        <div style="background: var(--bg-gradient); color: var(--text-white); padding: var(--spacing-sm) var(--spacing-md); border-radius: var(--radius-sm); display: inline-block; font-size: 0.875rem; font-weight: var(--font-weight-medium); margin-bottom: var(--spacing-md);">
+                            Featured
+                        </div>
+                        <h3 style="margin-bottom: var(--spacing-md);">The Science of Mindful Eating: Transform Your Relationship with Food</h3>
+                        <p style="margin-bottom: var(--spacing-lg);">
+                            Discover how mindful eating can revolutionize your relationship with food, improve digestion, 
+                            and help you develop a healthier approach to nutrition that goes beyond just what you eat.
+                        </p>
+                        <div style="margin-bottom: var(--spacing-lg);">
+                            <span style="background: var(--bg-tertiary); padding: var(--spacing-xs) var(--spacing-sm); border-radius: var(--radius-sm); font-size: 0.875rem; margin-right: var(--spacing-sm);">Nutrition</span>
+                            <span style="background: var(--bg-tertiary); padding: var(--spacing-xs) var(--spacing-sm); border-radius: var(--radius-sm); font-size: 0.875rem;">5 min read</span>
+                        </div>
+                        <a href="#" class="btn btn-primary">Read Article</a>
+                    </div>
+                    <div style="background: var(--bg-gradient); height: 200px; border-radius: var(--radius-lg); display: flex; align-items: center; justify-content: center; color: var(--text-white); font-size: 4rem;">
+                        🍎
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Posts Grid -->
+    <section class="section">
+        <div class="container">
+            <div class="text-center" style="margin-bottom: var(--spacing-3xl);">
+                <h2>Latest Articles</h2>
+                <p style="font-size: 1.125rem; max-width: 600px; margin: 0 auto;">
+                    Stay up-to-date with our latest wellness insights and practical advice.
+                </p>
+            </div>
+            
+            <div id="blog-posts-grid" class="grid grid-3">
+                <!-- Nutrition Articles -->
+                <div class="blog-post card" data-category="nutrition">
+                    <div style="background: var(--bg-gradient); height: 150px; border-radius: var(--radius-lg); display: flex; align-items: center; justify-content: center; color: var(--text-white); font-size: 3rem; margin-bottom: var(--spacing-md);">
+                        🥗
+                    </div>
+                    <h4>10 Superfoods to Boost Your Immune System</h4>
+                    <p style="font-size: 0.875rem; color: var(--text-light); margin-bottom: var(--spacing-sm);">
+                        By Dr. Sarah Chen • March 15, 2024
+                    </p>
+                    <p style="margin-bottom: var(--spacing-md);">
+                        Discover the power of nutrient-dense superfoods and learn how to incorporate them 
+                        into your daily meals for optimal health and immunity.
+                    </p>
+                    <div style="margin-bottom: var(--spacing-md);">
+                        <span style="background: var(--bg-tertiary); padding: var(--spacing-xs) var(--spacing-sm); border-radius: var(--radius-sm); font-size: 0.875rem; margin-right: var(--spacing-sm);">Nutrition</span>
+                        <span style="background: var(--bg-tertiary); padding: var(--spacing-xs) var(--spacing-sm); border-radius: var(--radius-sm); font-size: 0.875rem;">4 min read</span>
+                    </div>
+                    <a href="#" class="btn btn-primary btn-small">Read More</a>
+                </div>
+                
+                <div class="blog-post card" data-category="nutrition">
+                    <div style="background: var(--bg-gradient); height: 150px; border-radius: var(--radius-lg); display: flex; align-items: center; justify-content: center; color: var(--text-white); font-size: 3rem; margin-bottom: var(--spacing-md);">
+                        💧
+                    </div>
+                    <h4>The Complete Guide to Hydration</h4>
+                    <p style="font-size: 0.875rem; color: var(--text-light); margin-bottom: var(--spacing-sm);">
+                        By Emma Thompson • March 12, 2024
+                    </p>
+                    <p style="margin-bottom: var(--spacing-md);">
+                        Learn about the importance of proper hydration, how much water you really need, 
+                        and creative ways to stay hydrated throughout the day.
+                    </p>
+                    <div style="margin-bottom: var(--spacing-md);">
+                        <span style="background: var(--bg-tertiary); padding: var(--spacing-xs) var(--spacing-sm); border-radius: var(--radius-sm); font-size: 0.875rem; margin-right: var(--spacing-sm);">Nutrition</span>
+                        <span style="background: var(--bg-tertiary); padding: var(--spacing-xs) var(--spacing-sm); border-radius: var(--radius-sm); font-size: 0.875rem;">6 min read</span>
+                    </div>
+                    <a href="#" class="btn btn-primary btn-small">Read More</a>
+                </div>
+                
+                <!-- Fitness Articles -->
+                <div class="blog-post card" data-category="fitness">
+                    <div style="background: var(--bg-gradient); height: 150px; border-radius: var(--radius-lg); display: flex; align-items: center; justify-content: center; color: var(--text-white); font-size: 3rem; margin-bottom: var(--spacing-md);">
+                        💪
+                    </div>
+                    <h4>Building Strength at Home: No Equipment Needed</h4>
+                    <p style="font-size: 0.875rem; color: var(--text-light); margin-bottom: var(--spacing-sm);">
+                        By James Wilson • March 10, 2024
+                    </p>
+                    <p style="margin-bottom: var(--spacing-md);">
+                        Discover effective bodyweight exercises and routines that can help you build 
+                        strength and muscle without any equipment or gym membership.
+                    </p>
+                    <div style="margin-bottom: var(--spacing-md);">
+                        <span style="background: var(--bg-tertiary); padding: var(--spacing-xs) var(--spacing-sm); border-radius: var(--radius-sm); font-size: 0.875rem; margin-right: var(--spacing-sm);">Fitness</span>
+                        <span style="background: var(--bg-tertiary); padding: var(--spacing-xs) var(--spacing-sm); border-radius: var(--radius-sm); font-size: 0.875rem;">7 min read</span>
+                    </div>
+                    <a href="#" class="btn btn-primary btn-small">Read More</a>
+                </div>
+                
+                <div class="blog-post card" data-category="fitness">
+                    <div style="background: var(--bg-gradient); height: 150px; border-radius: var(--radius-lg); display: flex; align-items: center; justify-content: center; color: var(--text-white); font-size: 3rem; margin-bottom: var(--spacing-md);">
+                        🧘‍♀️
+                    </div>
+                    <h4>Yoga for Beginners: Your First Steps</h4>
+                    <p style="font-size: 0.875rem; color: var(--text-light); margin-bottom: var(--spacing-sm);">
+                        By Maria Santos • March 8, 2024
+                    </p>
+                    <p style="margin-bottom: var(--spacing-md);">
+                        Start your yoga journey with confidence. Learn basic poses, breathing techniques, 
+                        and how to create a sustainable practice that fits your lifestyle.
+                    </p>
+                    <div style="margin-bottom: var(--spacing-md);">
+                        <span style="background: var(--bg-tertiary); padding: var(--spacing-xs) var(--spacing-sm); border-radius: var(--radius-sm); font-size: 0.875rem; margin-right: var(--spacing-sm);">Fitness</span>
+                        <span style="background: var(--bg-tertiary); padding: var(--spacing-xs) var(--spacing-sm); border-radius: var(--radius-sm); font-size: 0.875rem;">5 min read</span>
+                    </div>
+                    <a href="#" class="btn btn-primary btn-small">Read More</a>
+                </div>
+                
+                <!-- Mental Health Articles -->
+                <div class="blog-post card" data-category="mental-health">
+                    <div style="background: var(--bg-gradient); height: 150px; border-radius: var(--radius-lg); display: flex; align-items: center; justify-content: center; color: var(--text-white); font-size: 3rem; margin-bottom: var(--spacing-md);">
+                        🧠
+                    </div>
+                    <h4>Managing Anxiety: Practical Strategies That Work</h4>
+                    <p style="font-size: 0.875rem; color: var(--text-light); margin-bottom: var(--spacing-sm);">
+                        By Dr. Lisa Park • March 5, 2024
+                    </p>
+                    <p style="margin-bottom: var(--spacing-md);">
+                        Explore evidence-based techniques for managing anxiety, from breathing exercises 
+                        to cognitive strategies that can help you regain control and find peace.
+                    </p>
+                    <div style="margin-bottom: var(--spacing-md);">
+                        <span style="background: var(--bg-tertiary); padding: var(--spacing-xs) var(--spacing-sm); border-radius: var(--radius-sm); font-size: 0.875rem; margin-right: var(--spacing-sm);">Mental Health</span>
+                        <span style="background: var(--bg-tertiary); padding: var(--spacing-xs) var(--spacing-sm); border-radius: var(--radius-sm); font-size: 0.875rem;">8 min read</span>
+                    </div>
+                    <a href="#" class="btn btn-primary btn-small">Read More</a>
+                </div>
+                
+                <div class="blog-post card" data-category="mental-health">
+                    <div style="background: var(--bg-gradient); height: 150px; border-radius: var(--radius-lg); display: flex; align-items: center; justify-content: center; color: var(--text-white); font-size: 3rem; margin-bottom: var(--spacing-md);">
+                        😴
+                    </div>
+                    <h4>Sleep Hygiene: Your Path to Better Rest</h4>
+                    <p style="font-size: 0.875rem; color: var(--text-light); margin-bottom: var(--spacing-sm);">
+                        By Michael Rodriguez • March 3, 2024
+                    </p>
+                    <p style="margin-bottom: var(--spacing-md);">
+                        Improve your sleep quality with proven sleep hygiene techniques. Learn about 
+                        creating the perfect sleep environment and establishing healthy bedtime routines.
+                    </p>
+                    <div style="margin-bottom: var(--spacing-md);">
+                        <span style="background: var(--bg-tertiary); padding: var(--spacing-xs) var(--spacing-sm); border-radius: var(--radius-sm); font-size: 0.875rem; margin-right: var(--spacing-sm);">Mental Health</span>
+                        <span style="background: var(--bg-tertiary); padding: var(--spacing-xs) var(--spacing-sm); border-radius: var(--radius-sm); font-size: 0.875rem;">6 min read</span>
+                    </div>
+                    <a href="#" class="btn btn-primary btn-small">Read More</a>
+                </div>
+                
+                <!-- Lifestyle Articles -->
+                <div class="blog-post card" data-category="lifestyle">
+                    <div style="background: var(--bg-gradient); height: 150px; border-radius: var(--radius-lg); display: flex; align-items: center; justify-content: center; color: var(--text-white); font-size: 3rem; margin-bottom: var(--spacing-md);">
+                        🌱
+                    </div>
+                    <h4>Creating a Sustainable Wellness Routine</h4>
+                    <p style="font-size: 0.875rem; color: var(--text-light); margin-bottom: var(--spacing-sm);">
+                        By Dr. Sarah Chen • March 1, 2024
+                    </p>
+                    <p style="margin-bottom: var(--spacing-md);">
+                        Learn how to build a wellness routine that actually sticks. Discover the psychology 
+                        of habit formation and practical strategies for long-term success.
+                    </p>
+                    <div style="margin-bottom: var(--spacing-md);">
+                        <span style="background: var(--bg-tertiary); padding: var(--spacing-xs) var(--spacing-sm); border-radius: var(--radius-sm); font-size: 0.875rem; margin-right: var(--spacing-sm);">Lifestyle</span>
+                        <span style="background: var(--bg-tertiary); padding: var(--spacing-xs) var(--spacing-sm); border-radius: var(--radius-sm); font-size: 0.875rem;">9 min read</span>
+                    </div>
+                    <a href="#" class="btn btn-primary btn-small">Read More</a>
+                </div>
+                
+                <div class="blog-post card" data-category="lifestyle">
+                    <div style="background: var(--bg-gradient); height: 150px; border-radius: var(--radius-lg); display: flex; align-items: center; justify-content: center; color: var(--text-white); font-size: 3rem; margin-bottom: var(--spacing-md);">
+                        📱
+                    </div>
+                    <h4>Digital Wellness: Finding Balance in a Connected World</h4>
+                    <p style="font-size: 0.875rem; color: var(--text-light); margin-bottom: var(--spacing-sm);">
+                        By Emma Thompson • February 28, 2024
+                    </p>
+                    <p style="margin-bottom: var(--spacing-md);">
+                        Navigate the digital age mindfully. Learn strategies for managing screen time, 
+                        reducing digital stress, and maintaining healthy relationships with technology.
+                    </p>
+                    <div style="margin-bottom: var(--spacing-md);">
+                        <span style="background: var(--bg-tertiary); padding: var(--spacing-xs) var(--spacing-sm); border-radius: var(--radius-sm); font-size: 0.875rem; margin-right: var(--spacing-sm);">Lifestyle</span>
+                        <span style="background: var(--bg-tertiary); padding: var(--spacing-xs) var(--spacing-sm); border-radius: var(--radius-sm); font-size: 0.875rem;">7 min read</span>
+                    </div>
+                    <a href="#" class="btn btn-primary btn-small">Read More</a>
+                </div>
+                
+                <!-- Wellness Tips Articles -->
+                <div class="blog-post card" data-category="wellness-tips">
+                    <div style="background: var(--bg-gradient); height: 150px; border-radius: var(--radius-lg); display: flex; align-items: center; justify-content: center; color: var(--text-white); font-size: 3rem; margin-bottom: var(--spacing-md);">
+                        🌅
+                    </div>
+                    <h4>Morning Routines That Set You Up for Success</h4>
+                    <p style="font-size: 0.875rem; color: var(--text-light); margin-bottom: var(--spacing-sm);">
+                        By James Wilson • February 25, 2024
+                    </p>
+                    <p style="margin-bottom: var(--spacing-md);">
+                        Transform your mornings with science-backed routines that boost energy, 
+                        improve focus, and create a positive foundation for your entire day.
+                    </p>
+                    <div style="margin-bottom: var(--spacing-md);">
+                        <span style="background: var(--bg-tertiary); padding: var(--spacing-xs) var(--spacing-sm); border-radius: var(--radius-sm); font-size: 0.875rem; margin-right: var(--spacing-sm);">Wellness Tips</span>
+                        <span style="background: var(--bg-tertiary); padding: var(--spacing-xs) var(--spacing-sm); border-radius: var(--radius-sm); font-size: 0.875rem;">5 min read</span>
+                    </div>
+                    <a href="#" class="btn btn-primary btn-small">Read More</a>
+                </div>
+                
+                <div class="blog-post card" data-category="wellness-tips">
+                    <div style="background: var(--bg-gradient); height: 150px; border-radius: var(--radius-lg); display: flex; align-items: center; justify-content: center; color: var(--text-white); font-size: 3rem; margin-bottom: var(--spacing-md);">
+                        🎯
+                    </div>
+                    <h4>Goal Setting for Wellness: A Step-by-Step Guide</h4>
+                    <p style="font-size: 0.875rem; color: var(--text-light); margin-bottom: var(--spacing-sm);">
+                        By Maria Santos • February 22, 2024
+                    </p>
+                    <p style="margin-bottom: var(--spacing-md);">
+                        Set and achieve your wellness goals with our comprehensive guide. Learn about 
+                        SMART goals, tracking progress, and staying motivated throughout your journey.
+                    </p>
+                    <div style="margin-bottom: var(--spacing-md);">
+                        <span style="background: var(--bg-tertiary); padding: var(--spacing-xs) var(--spacing-sm); border-radius: var(--radius-sm); font-size: 0.875rem; margin-right: var(--spacing-sm);">Wellness Tips</span>
+                        <span style="background: var(--bg-tertiary); padding: var(--spacing-xs) var(--spacing-sm); border-radius: var(--radius-sm); font-size: 0.875rem;">6 min read</span>
+                    </div>
+                    <a href="#" class="btn btn-primary btn-small">Read More</a>
+                </div>
+            </div>
+            
+            <!-- Pagination -->
+            <div class="text-center" style="margin-top: var(--spacing-3xl);">
+                <div class="flex-center" style="gap: var(--spacing-sm);">
+                    <button class="btn btn-secondary btn-small" disabled>Previous</button>
+                    <button class="btn btn-primary btn-small">1</button>
+                    <button class="btn btn-secondary btn-small">2</button>
+                    <button class="btn btn-secondary btn-small">3</button>
+                    <button class="btn btn-secondary btn-small">Next</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Signup -->
+    <section class="section section-alt">
+        <div class="container">
+            <div class="text-center">
+                <h2>Stay Updated</h2>
+                <p style="font-size: 1.125rem; max-width: 600px; margin: 0 auto var(--spacing-xl);">
+                    Subscribe to our newsletter and never miss our latest articles, wellness tips, 
+                    and exclusive content delivered directly to your inbox.
+                </p>
+                <form id="blog-newsletter-form" class="flex-center" style="gap: var(--spacing-md); max-width: 400px; margin: 0 auto;">
+                    <input type="email" placeholder="Enter your email" class="form-input" required>
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="section-alt" style="padding-top: var(--spacing-2xl); padding-bottom: var(--spacing-xl);">
+        <div class="container">
+            <div class="grid grid-4" style="margin-bottom: var(--spacing-2xl);">
+                <div>
+                    <h4 style="margin-bottom: var(--spacing-md);">🌿 Pure Wellness</h4>
+                    <p style="margin-bottom: var(--spacing-md);">
+                        Your trusted partner in holistic health and wellness. We're committed to helping you achieve 
+                        optimal well-being through personalized programs and expert guidance.
+                    </p>
+                    <div class="flex" style="gap: var(--spacing-md);">
+                        <a href="#" style="font-size: 1.5rem;">📘</a>
+                        <a href="#" style="font-size: 1.5rem;">📷</a>
+                        <a href="#" style="font-size: 1.5rem;">🐦</a>
+                        <a href="#" style="font-size: 1.5rem;">💼</a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h5 style="margin-bottom: var(--spacing-md);">Services</h5>
+                    <ul style="list-style: none;">
+                        <li style="margin-bottom: var(--spacing-sm);"><a href="services.html">Wellness Coaching</a></li>
+                        <li style="margin-bottom: var(--spacing-sm);"><a href="services.html">Nutrition Counseling</a></li>
+                        <li style="margin-bottom: var(--spacing-sm);"><a href="services.html">Fitness Training</a></li>
+                        <li style="margin-bottom: var(--spacing-sm);"><a href="services.html">Mental Health Support</a></li>
+                        <li style="margin-bottom: var(--spacing-sm);"><a href="services.html">Group Sessions</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h5 style="margin-bottom: var(--spacing-md);">Resources</h5>
+                    <ul style="list-style: none;">
+                        <li style="margin-bottom: var(--spacing-sm);"><a href="resources.html">Wellness Guides</a></li>
+                        <li style="margin-bottom: var(--spacing-sm);"><a href="blog.html">Health Articles</a></li>
+                        <li style="margin-bottom: var(--spacing-sm);"><a href="practices.html">Daily Practices</a></li>
+                        <li style="margin-bottom: var(--spacing-sm);"><a href="quiz.html">Wellness Assessment</a></li>
+                        <li style="margin-bottom: var(--spacing-sm);"><a href="resources.html">Recipe Collection</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h5 style="margin-bottom: var(--spacing-md);">Contact</h5>
+                    <p style="margin-bottom: var(--spacing-sm);">📧 info@purewellness.com</p>
+                    <p style="margin-bottom: var(--spacing-sm);">📞 (555) 123-4567</p>
+                    <p style="margin-bottom: var(--spacing-sm);">📍 123 Wellness Ave, Health City, HC 12345</p>
+                    <a href="contact.html" class="btn btn-primary btn-small">Contact Us</a>
+                </div>
+            </div>
+            
+            <div class="flex-between" style="padding-top: var(--spacing-xl); border-top: 1px solid var(--bg-tertiary);">
+                <p style="margin-bottom: 0; color: var(--text-light);">
+                    © 2024 Pure Wellness. All rights reserved.
+                </p>
+                <div class="flex" style="gap: var(--spacing-lg);">
+                    <a href="#" style="color: var(--text-light);">Privacy Policy</a>
+                    <a href="#" style="color: var(--text-light);">Terms of Service</a>
+                    <a href="#" style="color: var(--text-light);">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toast Container -->
+    <div id="toast-container"></div>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+    <script src="blog.js"></script>
+</body>
+</html>
