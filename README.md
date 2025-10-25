@@ -2,49 +2,49 @@
 
 A comprehensive wellness platform designed to help users achieve holistic health through personalized programs, interactive assessments, and expert guidance. This modern, responsive website provides a complete wellness experience covering mind, body, and soul.
 
-## ✨ Features
+##  Features
 
-### 🏠 **Homepage**
+###  **Homepage**
 - Hero section with compelling call-to-action
 - Feature showcase highlighting key wellness areas
 - Daily inspiration section with motivational quotes
 - Quick wellness assessment integration
 
-### 📋 **Interactive Assessment**
+###  **Interactive Assessment**
 - Comprehensive wellness quiz (`quiz.html`)
 - Personalized recommendations based on responses
 - Progress tracking and goal setting
 
-### 🧘 **Wellness Practices**
+###  **Wellness Practices**
 - Guided meditation sessions
 - Breathing exercises
 - Stress reduction techniques
 - Sleep optimization strategies
 
-### 🥗 **Nutrition & Resources**
+###  **Nutrition & Resources**
 - Nutritional guidance and meal planning
 - Healthy recipe collection
 - Wellness guides and articles
 - Educational content library
 
-### 💪 **Fitness & Services**
+###  **Fitness & Services**
 - Personalized fitness programs
 - Yoga and strength training routines
 - Mental health support resources
 - Professional wellness coaching
 
-### 📝 **Blog & Community**
+###  **Blog & Community**
 - Health and wellness articles
 - Community support features
 - Expert insights and tips
 - User engagement tools
 
-### 📞 **Contact & Support**
+###  **Contact & Support**
 - Contact forms and information
 - Professional consultation booking
 - Community support channels
 
-## 🛠️ Technology Stack
+##  Technology Stack
 
 - **Pure HTML5** - No frameworks or libraries
 - **CSS3** - Custom styling with CSS Variables
@@ -53,7 +53,7 @@ A comprehensive wellness platform designed to help users achieve holistic health
 - **Emoji Icons** - Universal compatibility
 - **Responsive Design** - Works on all devices
 
-## 🚀 Getting Started
+##  Getting Started
 
 ### How to Run
 1. **Download the project files**
@@ -62,7 +62,7 @@ A comprehensive wellness platform designed to help users achieve holistic health
 
 No installation, no server, no dependencies - just open and go!
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 pure-wellness/
@@ -84,7 +84,7 @@ pure-wellness/
 └── README.md           # This file
 ```
 
-## 🎨 Design Features
+##  Design Features
 
 ### Color Scheme
 - **Primary**: Deep blue (#2c5aa0)
@@ -103,7 +103,7 @@ pure-wellness/
 - **Card-based Components**: Clean, modern interface
 - **Smooth Animations**: CSS transitions and transforms
 
-## 🔧 Customization
+##  Customization
 
 ### Adding New Pages
 1. Create a new HTML file following the existing structure
@@ -121,7 +121,7 @@ pure-wellness/
 - Modify quiz questions in `quiz.js`
 - Add new blog posts in `blog.html`
 
-## 📱 Browser Compatibility
+##  Browser Compatibility
 
 - ✅ Chrome 60+
 - ✅ Firefox 55+
@@ -129,7 +129,7 @@ pure-wellness/
 - ✅ Edge 79+
 - ✅ Mobile browsers (iOS Safari, Chrome Mobile)
 
-## 🚀 Deployment
+##  Deployment
 
 ### Simple Deployment Options
 Since this is pure HTML, you can:
@@ -145,37 +145,5 @@ Since this is pure HTML, you can:
 - Works directly in any web browser
 - Perfect for sharing via file sharing or simple hosting
 
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add some amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 👥 Team
-
-- **Pure Wellness Team** - Initial development and design
-
-## 📞 Support
-
-For support, email info@purewellness.com or visit our contact page.
-
-## 🔮 Future Enhancements
-
-- [ ] User authentication and profiles
-- [ ] Progress tracking dashboard
-- [ ] Mobile app integration
-- [ ] Video content integration
-- [ ] Community forums
-- [ ] Payment integration for premium services
-- [ ] API integration for health data
-- [ ] Multi-language support
-
----
 
 **Made with ❤️ for your wellness journey**
